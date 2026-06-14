@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.universal.payroll.controllersFx.LoginController"
+            stylesheets="@../css/login.css"
+            prefHeight="400"
+            prefWidth="600" >
+
+    <VBox>
+        <Label text="Log In" />
+        <HBox>
+            <Label text="User name: " />
+            <TextField fx:id="userName" />
+        </HBox>
+        <HBox>
+            <Label text="Password: " />
+            <TextField fx:id="password" />
+        </HBox>
+        <HBox>
+            <Button fx:id="logInButton" text="Log in" onAction="#loadUserAndOpenHomePage"/>
+            <Button fx:id="signUpButton" text="Sign up" onAction="#saveNewUser"/>
+        </HBox>
+        <Label fx:id="alert"/>
+    </VBox>
+</AnchorPane>

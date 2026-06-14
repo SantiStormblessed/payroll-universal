@@ -1,13 +1,13 @@
 package com.universal.payroll;
 
-import org.springframework.boot.SpringApplication;
+import javafx.application.Application;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class PayrollApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PayrollApplication.class, args);
+		Application.launch(PayrollFxApplication.class, args);
 	}
 
 }
